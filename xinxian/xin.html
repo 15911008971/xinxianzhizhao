@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" ng-app="text">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div class="container" ng-controller="main">
+		 <header class="header">
+		 	<a href="#"><返回</a>
+		 	<h1>新鲜制造</h1>
+
+		 	<span></span>
+		 </header>
+
+		 <nav class="ce">
+		 	<a href="#"><</a>
+		 	<h2>小鲜测试</h2>
+		 	<h2 class="ji">基本信息</h2>
+		 </nav>
+		 <div ui-view class="wrap">
+		 	
+		 </div>
+		 <!-- <div class="one">
+		 	<p class="st">开始</p>
+		 	<p class="jin">孕妇不要参考本版本</p>
+		 </div> -->
+		<!--  <div class="two">
+			<h2>请选择您的性别</h2>
+			<div class="left">
+				<span class="man"></span>
+				<label for="nan">我是男神</label>
+				<p><input type="radio" id="nan" name="d"><span></span></p>
+			</div>
+			<div class="right">
+				<span class="girl"></span>
+				<label for="nu">我是女神</label>
+				<p><input type="radio" id="nu" name="d"><span></span></p>
+			</div>
+			<p class="twoji">继续</p>
+		</div> -->
+		 <!-- <div class="three">
+		 	<h3>有无病史</h3>
+		 	<p><label for="you">有</label><input type="radio" id="you" name="s"><span></span></p>
+		 	<p><label for="wu">无</label><input type="radio" id="wu" name="s"><span></span></p>
+		 	<div>
+		 		<span></span>
+		 		<ul>
+		 			<li>心脏病</li>
+		 			<li>冠心病</li>
+		 			<li>肺癌</li>
+		 			<li>心脏病</li>
+		 			<li>冠心病</li>
+		 			<li>肺癌</li>
+		 			<li>肝癌</li>
+		 			
+		 		</ul>
+		 	</div>
+		 	<p class="threeji">继续</p>
+		 </div> -->
+		<!--  <div class="four">
+			<h3>有无过敏食物</h3>
+			<p><label for="you">有</label><input type="radio" id="you" name="s"><span></span></p>
+			<p><label for="wu">无</label><input type="radio" id="wu" name="s"><span></span></p>
+			<div>
+				<span></span>
+				<ul>
+					<li>羊肉</li>
+					<li>海鲜</li>
+					<li>芹菜</li>
+					<li>胡萝卜</li>
+					<li>芹菜</li>
+					<li>芹菜</li>
+					<li>芹菜</li>
+				</ul>
+			</div>
+			<p class="fourji">继续</p>
+		</div> -->
+		  <!-- <div class="five">
+		  		 	<h3>不喜欢吃的食物</h3>
+		  		 	<div>
+		  		 		<ul>
+		  		 			<li><input type="checkbox" id="aa"><span></span></span><label for="aa">羊肉</label></li>
+		  		 			<li><input type="checkbox" id="bb"><span></span></span><label for="bb">海鲜</label></li>
+		  		 			<li><input type="checkbox" id="cc"><span></span></span><label for="cc">芹菜</label></li>
+		  		 			<li><input type="checkbox" id="dd"><span></span></span><label for="dd">胡萝卜</label></li>
+		  		 			<li><input type="checkbox" id="ee"><span></span></span><label for="ee">芹菜</label></li>
+		  		 		</ul>
+		  		 		<ul>
+		  		 			<li><input type="checkbox" id="ff"><span></span></span><label for="ff">羊肉</label></li>
+		  		 			<li><input type="checkbox" id="gg"><span></span></span><label for="gg">海鲜</label></li>
+		  		 			<li><input type="checkbox" id="vv"><span></span></span><label for="vv">芹菜</label></li>
+		  		 			<li><input type="checkbox" id="qq"><span></span></span><label for="qq">胡萝卜</label></li>
+		  		 			<li><input type="checkbox" id="mm"><span></span></span><label for="mm">芹菜</label></li>
+		  		 		</ul>
+		  		 	</div>
+		  		 	<p class="fiveji">继续</p>
+		  		 	
+		  		 </div> -->
+		 <!-- <div class="black" ng-if="dog">
+		 		
+		 </div> -->
+		  <!-- <div class='tank'>
+		  		 		<img src="img/tan.jpg">
+		  		 		<span>X</span>
+		  		 		<p>开始测试</p>
+		  		 	</div> -->
+		 <!-- <div class="six">
+		 	<p>您的皮肤一抓就红，病出现抓痕吗？</p>
+		 	<ul>
+		 		<li>没有</li>
+		 		<li>很少</li>
+		 		<li>有时</li>
+		 		<li>经常</li>
+		 		<li>总是</li>
+		 	</ul>
+		 	<p>您平时痰多或者是咽喉部总有痰堵着吗?</p>
+		 	<ul>
+		 		<li>没有</li>
+		 		<li>很少</li>
+		 		<li>有时</li>
+		 		<li>经常</li>
+		 		<li>总是</li>
+		 	</ul>
+		 	<p>您吃（喝）凉的东西会感到不舒服或者是怕吃（喝）凉的东西吗？</p>
+		 	<ul>
+		 		<li>没有</li>
+		 		<li>很少</li>
+		 		<li>有时</li>
+		 		<li>经常</li>
+		 		<li>总是</li>
+		 	</ul>
+		 	<p>您的皮肤一抓就红，病出现抓痕吗？</p>
+		 	<ul>
+		 		<li>没有</li>
+		 		<li>很少</li>
+		 		<li>有时</li>
+		 		<li>经常</li>
+		 		<li>总是</li>
+		 	</ul>
+		 	<p>您的皮肤一抓就红，病出现抓痕吗？</p>
+		 	<ul>
+		 		<li>没有</li>
+		 		<li>很少</li>
+		 		<li>有时</li>
+		 		<li>经常</li>
+		 		<li>总是</li>
+		 	</ul>
+		 	<button class="sixti">提交</button>
+		 </div> -->
+	</div>
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-ui-router.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/directive.js"></script>
+	<script type="text/javascript">
+		/*var app=angular.module("text",[]);
+		app.controller("st",function($scope){
+			$scope.start=function(){
+				$(".one").hide();
+				$(".two").show();
+			}
+			$scope.twoji=function(){
+				$(".two").hide();
+				$(".three").show();
+				
+			}
+			$scope.threeji=function(){
+				$(".three").hide();
+				$(".four").show();
+			}
+			$scope.fourji=function(){
+				$(".four").hide();
+				$(".five").show();
+			}
+			$scope.fiveji=function(){
+				$(".black").show();
+				$(".tank").show();
+			}
+			$scope.close=function(){
+				$(".black").hide();
+				$(".tank").hide();
+				$(".five").show();
+			}
+			$scope.be=function(){
+				$(".black").hide();
+				$(".tank").hide();
+				$(".five").hide();
+				$(".six").show();
+			}
+			$scope.sixti=function(){
+				alert("提交成功")
+			}
+			$(".three input").on("click",function(){
+				if($(".three #you").attr('checked')){
+						$(".three div").show();
+				}else if($(".three #wu").attr('checked')){
+					$(".three div").hide();
+				}
+			})
+			$(".three ul li").on("click",function(){
+				$(this).toggleClass("bg");
+			})
+			$(".four input").on("click",function(){
+				if($(".four #you").attr('checked')){
+						$(".four div").show();
+				}else if($(".four #wu").attr('checked')){
+					$(".four div").hide();
+				}
+			})
+			$(".four ul li").on("click",function(){
+				$(this).toggleClass("bg");
+			})
+			$(".six ul li").on("click",function(){
+				$(this).toggleClass("bg").siblings().removeClass("bg");
+			})
+			
+		})*/
+	</script>
+	
+</body>
+</html>

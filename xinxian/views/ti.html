@@ -1,0 +1,52 @@
+<div class="six" ti-page>
+	<div ng-repeat="i in dataJson" class='s'>
+		<p>{{i.title}}</p>
+		<ul>
+			<li ng-repeat='item in i.rad'>
+				{{item}}<input type="radio" name="one" value="{{item}}">
+			</li>
+		</ul>
+	</div>
+	
+	<!-- <p>您的皮肤一抓就红，病出现抓痕吗？</p>
+	<ul>
+		<li>没有<input type="radio" name="one"></li>
+		<li>很少<input type="radio" name="one"></li>
+		<li>有时<input type="radio" name="one"></li>
+		<li>经常<input type="radio" name="one"></li>
+		<li>总是<input type="radio" name="one"></li>
+	</ul>
+	<p>您平时痰多或者是咽喉部总有痰堵着吗?</p>
+	<ul>
+		<li>没有<input type="radio" name="two"></li>
+		<li>很少<input type="radio" name="two"></li>
+		<li>有时<input type="radio" name="two"></li>
+		<li>经常<input type="radio" name="two"></li>
+		<li>总是<input type="radio" name="two"></li>
+	</ul>
+	<p>您吃（喝）凉的东西会感到不舒服或者是怕吃（喝）凉的东西吗？</p>
+	<ul>
+		<li>没有<input type="radio" name="three"></li>
+		<li>很少<input type="radio" name="three"></li>
+		<li>有时<input type="radio" name="three"></li>
+		<li>经常<input type="radio" name="three"></li>
+		<li>总是<input type="radio" name="three"></li>
+	</ul>
+	<p>您的皮肤一抓就红，病出现抓痕吗？</p>
+	<ul>
+		<li>没有<input type="radio" name="four"></li>
+		<li>很少<input type="radio" name="four"></li>
+		<li>有时<input type="radio" name="four"></li>
+		<li>经常<input type="radio" name="four"></li>
+		<li>总是<input type="radio" name="four"></li>
+	</ul>
+	<p>您的皮肤一抓就红，病出现抓痕吗？</p>
+	<ul>
+		<li>没有<input type="radio" name="five"></li>
+		<li>很少<input type="radio" name="five"></li>
+		<li>有时<input type="radio" name="five"></li>
+		<li>经常<input type="radio" name="five"></li>
+		<li>总是<input type="radio" name="five"></li>
+	</ul> -->
+	<button class="sixti" ><a href="#" ng-click="sub()">提交</a></button>
+</div>
